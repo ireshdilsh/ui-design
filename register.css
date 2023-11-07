@@ -1,0 +1,110 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    &::after{
+        content: "";
+        inset: 0;
+        position: fixed;
+        background-color: #F4CE14;
+        clip-path: polygon(0 1%, 63% 0, 33% 100%, 0% 100%);
+        z-index: -1;
+    }
+}.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}.register-form-left img{
+    height: 300px;
+    width: 300px;
+}.title{
+   text-align: center;
+}.name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}.password,.email,.adress{
+    position: relative;
+}.address input,.email input,.password input,.adress input{
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1.5px solid silver;
+    border-radius: 7px;
+    width: 529px;
+    outline: none;
+    padding: 0 10px;
+}.fname input,.lname input{
+    font-size: 16px;
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1.5px solid silver;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 10px;
+}.register-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}.adress label,.password label,.email label{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    padding: 0 7px;
+    font-weight: 600;
+    transition: .3s;
+}.fname label{
+    position: absolute;
+    font-weight: 600;
+    top: 30px;
+    left: 10px;
+    pointer-events: none;
+    padding: 0 7px;
+    transition: .3s;
+}.lname label{
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 18.2rem;
+    pointer-events: none;
+    padding: 0 7px;
+    transition: .3s;
+}.lname input{
+    margin-left: 10px;
+}.register-form-left{
+    padding: 0 20px;
+}.fname input:focus ~ label,.fname input:valid ~ label,
+.adress input:focus ~ label,.adress input:valid ~ label,
+.email input:focus ~ label,.email input:valid ~ label,
+.password input:focus ~ label,.password input:valid ~ label{
+    top: 9px;
+    left: 10px;
+    background-color: white;
+    font-size: 14px;
+}.lname input:focus ~ label,.lname input:valid ~label{
+    top: 9px;
+    background-color: white;
+    font-size: 14px;
+}.register-button input{
+    height: 40px;
+    width: 550px;
+    background-color: white;
+    border-radius: 7px;
+    border: 1.5px solid black;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+        background-color: black;
+        cursor: pointer;
+        color: white;
+    }
+}

@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(213, 238, 230);
+    &::after{
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: #F4CE14;
+        clip-path: polygon(0 0, 60% 0, 28% 100%, 0% 100%);
+        z-index: -2;
+    }
+}.border{
+    position: relative;
+    width: 400px;
+    height: 420px;
+   background-color: rgb(255, 255, 255);
+   border: 1.5px solid silver;
+   border-radius: 7px;
+}.glow::before,.glow::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -4.2px;
+    background: linear-gradient(45deg,aqua,white,white,white,white,blue,white,white,white,white);
+    background-size: 400%;
+    height: 431px;
+    width: 410px;
+    z-index: -1;
+    border-radius: 7px;
+    animation: animate  20s linear infinite;
+}@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }50%{
+        background-position: 400% 0;
+    }100%{
+        background-position: 0 0;
+}
+}.wrapper{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}.title{
+    text-align: center;
+}.username-email,.password{
+  position: relative;
+  margin-top: 20px;
+}.username-email input,.password input{
+    width: 20rem;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    outline: none;
+}.username-email label,.password label{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 14px;
+    pointer-events: none;
+    padding: 0 7px;
+    transition: .3s;
+}.username-email input:focus ~ label,.username-email input:valid ~ label,
+.password input:focus ~ label,.password input:valid ~ label{
+    top: -10px;
+    background-color: white;
+}.remember-forgetpass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}.login-button input{
+    margin-top: 15px;
+    width: 20.4rem;
+    height: 2.7rem;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 600;
+    &:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+}.gotoregister{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}.forget-password a,.register-link a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    &:hover{
+        text-decoration: underline;
+        color: blue;
+    }
+}.remember input{
+    cursor: pointer;
+}.line{
+  margin-top: 20px;
+}.orlabel label{
+    position: absolute;
+    top: 21.5rem;
+    left: 11.5rem;
+    background-color: white;
+    padding: 0 10px;
+}.welcomepage a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+  position: absolute;
+  top: 23rem;
+  left: 9rem;
+  font-weight: 500;
+  color: black;
+  &:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+}.glow::after{
+   filter: blur(30px);
+}

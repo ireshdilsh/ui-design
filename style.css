@@ -1,0 +1,81 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("BAUHINIA\ \(1\).png");
+    background-size: cover;
+    background-color: rgb(244, 244, 244);
+  position: relative;
+}.wrapper{
+    display: flex;
+}.title h1{
+   margin-top: 20px;
+   margin-left: 20px;
+   width: 250px;
+   height: 300px;
+}.links {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 60rem;
+    top: 20px;
+}.links li a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin:0 12px;
+           &:hover{
+           color: blue;
+           } 
+}.links li{
+    list-style-type: none;
+}.contents{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 0;
+   margin-left: 25rem;
+   position: absolute;
+   top: 12rem;
+}.sub-title1 h6{
+    font-size: 18px;
+}.subtitle2 h2{
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 2s
+    ,cursor .4 step-end infinite alternate;
+}.sub-title3 h6{
+    font-size: 18px;
+}.watermark-title h1{
+    rotate: -30deg;
+    position: absolute;
+    top: 0;
+    left: 22rem;
+    font-family: 'Pacifico', cursive;
+   font-weight: 300;
+   font-size: 68px;
+   color: silver;
+}.get-button input{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}.get-button i{
+    position: absolute;
+    rotate: 180deg;
+    top: 18.5rem;
+    left: 10px;
+    
+    &:hover{
+        pointer-events: none;
+        background-color: whi;
+    }
+}
